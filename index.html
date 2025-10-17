@@ -22,7 +22,7 @@
 
   header {
     height:100vh;
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url('images/banner.png') center/cover no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url('banner.png') center/cover no-repeat;
     display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center;
   }
   header h1 { font-size:4rem; letter-spacing:2px; text-transform:uppercase; }
@@ -78,13 +78,13 @@
 <section id="collections">
   <h2>Menswear</h2>
   <div class="slider">
-    <img src="images/1.jpg" class="active" alt="Menswear 1">
-    <img src="images/2.jpg" alt="Menswear 2">
-    <img src="images/3.jpg" alt="Menswear 3">
-    <img src="images/4.jpg" alt="Menswear 4">
-    <img src="images/5.jpg" alt="Menswear 5">
-    <img src="images/6.jpg" alt="Menswear 6">
-    <img src="images/7.jpg" alt="Menswear 7">
+    <img src="1.jpg" class="active" alt="Menswear 1">
+    <img src="2.jpg" alt="Menswear 2">
+    <img src="3.jpg" alt="Menswear 3">
+    <img src="4.jpg" alt="Menswear 4">
+    <img src="5.jpg" alt="Menswear 5">
+    <img src="6.jpg" alt="Menswear 6">
+    <img src="7.jpg" alt="Menswear 7">
   </div>
 
   <h2>Womenswear</h2>
@@ -102,7 +102,6 @@
   // Slider logic
   const slides = document.querySelectorAll('.slider img');
   let current = 0;
-
   setInterval(() => {
     slides[current].classList.remove('active');
     current = (current + 1) % slides.length;
